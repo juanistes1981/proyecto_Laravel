@@ -1,0 +1,81 @@
+body{
+box-sizing: border-box;
+}
+
+#banner{
+  background-image:url("../imagenes/bannerbook.jpg");
+  margin-top: 3em;
+  height: 40%;
+position: relative;
+}
+
+#titlebook{
+  font-family: 'Rozha One', serif;
+  font-size: 12em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#search{
+  color:grey;
+  border-color: grey;
+}
+
+#logo {
+  top: 20px;
+  left: 5px;
+  width: 10%;
+  border-radius: 90px;
+  border: 1px solid #ccc;
+}
+
+.categorias{
+  display: block;
+  float: right;
+  width: 100%;
+  padding-right: 0px;
+padding-left: 0px;
+}
+
+.producto{
+  width: 70%;
+  height: 55%;
+  padding: 1px;
+}
+.prociencias{
+  width: 100%;
+  height: 55%;
+  padding: 2px;
+}
+.circulo{
+  border-radius: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+  width: 50%;
+  height: 165px;
+}
+.title{
+  font-size:1.6em;
+  }
+  .titlebookciencias{
+    font-size: 1.45em;
+  }
+
+.navbar-collapse{
+  text-align: center;
+}
+.footer{
+  background-color: black;
+  color:white;
+  width: 100%;
+}
+@media (min-width: 576px)
+.form-inline .form-control {
+    display: inline-block;
+    width: 85%;
+    vertical-align: middle;
+}

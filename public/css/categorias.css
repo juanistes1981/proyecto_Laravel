@@ -1,0 +1,29 @@
+#search{
+  color:grey;
+  border-color: grey;
+}
+.special {
+  display: inline-block;
+  width: 20%;
+    padding: 10px 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 5%;
+  left: 10%;
+}
+
+
+.card-img-top {
+
+    width: 80%;
+    height: 70vh!important;
+}
+
+
+font-weight-bold {
+    font-weight: 800!important;
+    font-size: 23px;
+}
+#habitos{
+font-size: 20px!important;
+}
