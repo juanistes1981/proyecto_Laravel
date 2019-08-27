@@ -18,11 +18,11 @@ class CreatePedidosTable extends Migration
             $table->date("fechaPedido");
             $table->unsignedDecimal("price",  8, 2);
             $table->timestamps();
-            $table->unsignedBigInteger("id_customers");
+            $table->unsignedBigInteger("customers_id");
 
         });
         Schema::table('pedidos', function (Blueprint $table) {
-            $table->foreign('id_customers')->references('id')->on('customers');
+            $table->foreign('customers_id')->references('id')->on('customers');
 
 
 

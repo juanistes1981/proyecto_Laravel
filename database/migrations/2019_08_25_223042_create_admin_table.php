@@ -16,11 +16,11 @@ class CreateAdminTable extends Migration
         Schema::create('admin', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->unsignedBigInteger("id_users");
+            $table->unsignedBigInteger("users_id");
 
         });
         Schema::table('admin', function (Blueprint $table) {
-            $table->foreign('id_users')->references('id')->on('users');
+            $table->foreign('users_id')->references('id')->on('users');
 
 
     });
