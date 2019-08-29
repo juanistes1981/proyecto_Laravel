@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class pedidoDetalle extends Model
 {
-    //
+  public $guarded =[];
 }
