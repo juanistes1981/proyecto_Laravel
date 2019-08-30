@@ -15,8 +15,25 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index', "IndexController@index");
 
 Route::get('/register', "RegisterController@ver");
 
 Route::get('/login', "LoginController@ver");
+
+Route::get('/book', "BookController@ver");
+
+Route::get('/music', "MusicController@ver");
+
+Route::get('/rock', "RockController@ver");
+
+Route::get('/pop', "PopController@ver");
+
+Route::get('/Contacto', "ContactoController@ver");
+
+Route::get('/footer', "FooterController@ver");
+
+Route::get('/navBar', "NaBarController@ver");
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
