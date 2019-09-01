@@ -23,9 +23,10 @@ Route::get('/login', "LoginController@ver");
 
 Auth::routes();
 
-Route::get('/', 'HomeController@home');
+Route::get('/home', 'HomeController@home');
 Route::get('/music', 'MusicController@all');
 Route::get('/books', 'BooksController@all');
 Route::get('/categories', 'CategoriesController@all');
 Route::get('/pedidos', 'MusicController@detalle');
 Route::get('/pedidos', 'BooksController@detalle');
+Route::get('/pedidos', 'categoriesController@detalle');
