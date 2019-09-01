@@ -14,7 +14,7 @@ class RegisterController extends Controller
 use RegisterUsers;
 @var string
 
-protected $redirecTo = '\home';
+protected $redirecTo = '/';
 
 @return void
 
@@ -29,6 +29,8 @@ protected function validator(array $data){
 
   return Validator::make($data,[
     'name'=>['required','string','max:255'],
+    'apellido'=>['required','string','max:255'],
+    'domicilio'=>['required','string','max:255'],
     'email'=>['required','string','email','max:255','unique'],
     'password'=>['required','string','min:8','confirmed']
   ])
