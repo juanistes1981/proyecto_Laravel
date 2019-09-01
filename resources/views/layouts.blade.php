@@ -6,7 +6,17 @@
       @yield("title")
     </title>
     <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/book.css">
+    <link rel="stylesheet" href="/css/categorias.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/music.css">
+    <link rel="stylesheet" href="/css/reg.css">
+    <link rel="stylesheet" href="/css/log1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
     @yield("css")
     @yield("js")
   </head>
@@ -22,8 +32,12 @@
               <a href="/Books">Books</a>
             </li>
             <li>
-              <a href="/categories">Categories</a> 
+              <a href="/carrito">carrito</a>
             </li>
+            <li>
+              <a href="/contacto">contacto</a>
+            </li>
+
             @if (Auth::check())
               <li>
                 <a href="/music/add">Add a Music</a>

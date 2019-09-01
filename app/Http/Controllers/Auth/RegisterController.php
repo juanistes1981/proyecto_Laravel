@@ -53,8 +53,8 @@ class RegisterController extends Controller
         'apellido'=>['required','string','max:255'],
         'domicilio'=>['required','string','max:255'],
         'email'=>['required','string','email','max:255','unique'],
-        'password'=>['required','string','min:8','confirmed']
-      ])
+        'password'=>['required','string','min:8','confirmed'],
+      ]);
     }
 
     /**
