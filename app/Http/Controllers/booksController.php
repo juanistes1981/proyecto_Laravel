@@ -3,28 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\book;
-use App\category;
-class musicController extends Controller
+
+class BooksController extends Controller
 {
   public function all() {
-    $books = Book::paginate(20); //probar con music
+    $books = books::paginate(20); //probar con music
 
-    return view("book", compact("book"));
+    return view("books", compact("books"));
   }
 
   public function detail($id) {
-    $books = Book::find($id);
+    $books = Books::find($id);
 
-    return view("book", compact("book"));
+    return view("books", compact("books"));
   }
 
   public function search(Request $req) {
     $search = $req["search"];
 
-    $books = Book::where("name", "like", "%" . $search . "%")->get();
+    $books = Books::where("name", "like", "%" . $search . "%")->get();
 
-    return view("search", compact("book", "search"));
+    return view("search", compact("books", "search"));
   }
 
   public function add() {
@@ -44,17 +43,17 @@ class musicController extends Controller
 
     $this->validate($req, $rules);
 
-    $book = new Book();
+    $books = new BooksController();
 
-    $book->titulo = $req->titulo;
-    $book->price = $req->price;
-    $book->stock = $req->stock;
-    $book->autor = $req->autor;
-    $book->category_id = $req->category;
+    $books->titulo = $req->titulo;
+    $books->price = $req->price;
+    $books->stock = $req->stock;
+    $books->autor = $req->autor;
+    $books->category_id = $req->category;
 
-    $book->save();
+    $books->save();
 
-    return redirect("/book/" . $book->id);
+    return redirect("/books/" . $books->id);
   }
 
   public function delete(Request $req) {
