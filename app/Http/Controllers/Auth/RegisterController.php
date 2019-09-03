@@ -52,7 +52,7 @@ class RegisterController extends Controller
         'name'=>['required','string','max:255'],
         'apellido'=>['required','string','max:255'],
         'domicilio'=>['required','string','max:255'],
-        'email'=>['required','string','email','max:255','unique'],
+        'email'=>['required','email','string','max:255','unique:users'],
         'password'=>['required','string','min:8','confirmed'],
         'avatar' => ['required', 'image']
       ]);
@@ -69,6 +69,7 @@ class RegisterController extends Controller
       $route = $data['avatar']->store("public");
 
       $fileName = basename($route);
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],

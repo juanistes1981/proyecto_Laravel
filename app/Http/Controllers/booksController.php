@@ -7,23 +7,23 @@ use Illuminate\Http\Request;
 class BooksController extends Controller
 {
   public function all() {
-    $books = books::paginate(20); //probar con music
+    $books = book::paginate(20); //probar con music
 
-    return view("books", compact("books"));
+    return view("book", compact("book"));
   }
 
   public function detail($id) {
-    $books = Books::find($id);
+    $books = Book::find($id);
 
-    return view("books", compact("books"));
+    return view("book", compact("book"));
   }
 
   public function search(Request $req) {
     $search = $req["search"];
 
-    $books = Books::where("name", "like", "%" . $search . "%")->get();
+    $books = Book::where("name", "like", "%" . $search . "%")->get();
 
-    return view("search", compact("books", "search"));
+    return view("search", compact("book", "search"));
   }
 
   public function add() {
@@ -43,7 +43,7 @@ class BooksController extends Controller
 
     $this->validate($req, $rules);
 
-    $books = new BooksController();
+    $books = new BookController();
 
     $books->titulo = $req->titulo;
     $books->price = $req->price;
@@ -53,7 +53,7 @@ class BooksController extends Controller
 
     $books->save();
 
-    return redirect("/books/" . $books->id);
+    return redirect("/book/" . $books->id);
   }
 
   public function delete(Request $req) {
