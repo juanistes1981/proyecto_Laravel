@@ -2,6 +2,17 @@ body{
   background-color: grey;
 box-sizing: border-box;
 }
+ul.links{
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+margin-top: 20 px;
+
+}
+li{
+margin-right: 10px;
+
+}
 .container-fluid{
   background-color: #17202A ;
   color: white;
@@ -53,4 +64,7 @@ p{
 .container{
     max-width: 1323px;
     padding: 0;
+}
+footer{
+  margin-top: 60px;
 }

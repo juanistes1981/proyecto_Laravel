@@ -54,7 +54,7 @@ class musicController extends Controller
 
     $music->save();
 
-    return redirect("/music/" . $music->id);
+    return redirect("/music" . $music->id);
   }
 
   public function delete(Request $req) {
