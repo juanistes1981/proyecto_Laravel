@@ -98,22 +98,22 @@
             <!-- Social buttons -->
             <ul class="list-unstyled list-inline text-center">
               <li class="list-inline-item">
-                <a href="http\\www.facebook.com" class="btn-floating btn-fb mx-1">
+                <a href="http://www.facebook.com" class="btn-floating btn-fb mx-1">
                   <img src="./imagenes/iconos/facebook.png" alt="facebook">
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="http\\www.twitter.com" class="btn-floating btn-tw mx-1">
+                <a href="http://www.twitter.com" class="btn-floating btn-tw mx-1">
                   <img src="./imagenes/iconos/gorjeo.png" alt="twiter">
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="http\\www.instagram.com" class="btn-floating btn-gplus mx-1">
+                <a href="http://www.instagram.com" class="btn-floating btn-gplus mx-1">
                   <img src="./imagenes/iconos/instagram.png" alt="instagram">
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="http\\www.linkedin.com" class="btn-floating btn-li mx-1">
+                <a href="http://www.linkedin.com" class="btn-floating btn-li mx-1">
                   <img src="./imagenes/iconos/linkedin.png" alt="linkedin">
                 </a>
               </li>
