@@ -3,19 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Book;
 class BooksController extends Controller
 {
   public function all() {
     $books = book::paginate(20); //probar con music
 
-    return view("book", compact("book"));
+    return view("book", compact("books"));
   }
 
   public function detail($id) {
     $books = Book::find($id);
 
-    return view("book", compact("book"));
+    return view("book", compact("books"));
   }
 
   public function search(Request $req) {
@@ -23,7 +23,7 @@ class BooksController extends Controller
 
     $books = Book::where("name", "like", "%" . $search . "%")->get();
 
-    return view("search", compact("book", "search"));
+    return view("search", compact("books", "search"));
   }
 
   public function add() {
