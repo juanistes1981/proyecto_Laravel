@@ -8,7 +8,7 @@ use App\category;
 class musicController extends Controller
 {
   public function all() {
-    $musics = Music::paginate(20); //probar con music
+    $music = Music::paginate(20); //probar con music
 
     return view("music", compact("music"));
   }
