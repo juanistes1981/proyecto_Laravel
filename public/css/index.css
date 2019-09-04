@@ -1,26 +1,51 @@
 body{
-  background-color: grey;
+background-color: grey;
 box-sizing: border-box;
 }
-ul.links{
+header ul{
 list-style-type: none;
 display: flex;
 flex-wrap: wrap;
-margin-top: 20 px;
+margin-top: 30px;
 
 }
-li{
-margin-right: 10px;
+header li{
+margin-right: 20px;
 
+}
+ul.links{
+  margin-top: 20px;
+}
+header nav{
+ display: flex;
+ flex-wrap: wrap;
+}
+header form{
+  display: flex;
+  margin top:40px;
+  }
+header form input{
+  width: 150px
+  margin-right:10px;
+}
+header form button{
+  height: 30px;
+  margin top:40px;
+}
+header ul img{
+  width: 40px;
+  border-radius: 50%;
+  position relative;
+  bottom: 8px;
+  margin left: 5px;
+  margin-right: 10px;
 }
 .container-fluid{
   background-color: #17202A ;
   color: white;
   width: 100%;
 }
-h1{
-color: white;
-}
+
 #logo {
   top: 20px;
   left: 5px;

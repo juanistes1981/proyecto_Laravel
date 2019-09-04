@@ -121,7 +121,7 @@
               </div>
           <!-- Category & Title -->
           <a href="https://es.wikipedia.org/wiki/Ace_of_Spades_(%C3%A1lbum)" class="grey-text">
-            <h5>Ace Od Spades</h5>
+            <h5>Ace Of Spades</h5>
           </a>
           <h5>
             <strong>

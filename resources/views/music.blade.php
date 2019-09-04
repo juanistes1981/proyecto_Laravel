@@ -1,7 +1,7 @@
 @extends("layouts")
-
+  @yield("music.css")
 @section("title")
-
+  Music
 @endsection
 
 @section("main")
@@ -44,7 +44,7 @@
             <h2 class="title">Rock</h2>
             <img class="producto"src="./imagenes/catgmusic/fondorock.jpg" alt="rock">
               <p>“En el rock reconoces algo verdadero, como en todo el arte de verdad. Si es real, normalmente es sencillo, y si es sencillo es verdadero.” -JOHN LENNON</p>
-    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+    <p><a class="btn btn-secondary" href="/rock" role="button">Rock Music »</a></p>
        </div>
 
 
@@ -54,7 +54,7 @@
                 <h2 class="title">Musica Pop</h2>
                 <img class="producto" src="./imagenes/catgmusic/pop.png" alt="pop">
                 <p>Desde su nacimiento a finales de los años 50 muchas canciones, dentro de este género se han convertido en himnos de una generación.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                <p><a class="btn btn-secondary" href="/pop" role="button">POP Music »</a></p>
           </div>
       </div>
     </div>

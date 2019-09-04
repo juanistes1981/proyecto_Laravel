@@ -1,7 +1,7 @@
 @extends("layouts")
-
+@yield("book.css")
 @section("title")
-
+  Books
 @endsection
 
 @section("main")
