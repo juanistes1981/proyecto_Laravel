@@ -40,6 +40,7 @@ class musicController extends Controller
       "stock" => "required|integer|min:0|max:1000",
       "autor" => "required|string|min:3|max:255",
       "category" => "required|exists:categories,id" //category puede ser
+      'avatar' => ['required', 'image']
     ];
 
     $this->validate($req, $rules);
@@ -51,7 +52,7 @@ class musicController extends Controller
     $music->stock = $req->stock;
     $music->autor = $req->autor;
     $music->category_id = $req->category;
-
+    $music->avatar=$req->avatar;
     $music->save();
 
     return redirect("/music" . $music->id);

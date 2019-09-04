@@ -7,11 +7,10 @@
       @yield("title")
     </title>
     <link rel="stylesheet" href="/css/app.css">
-    <!-- <link rel="stylesheet" href="/css/book.css">-->
+  
     <!--<link rel="stylesheet" href="/css/categorias.css">-->
     <!--<link rel="stylesheet" href="/css/contacto.css">-->
-    <!--<link rel="stylesheet" href="/css/music.css">-->
-    <!--<link rel="stylesheet" href="/css/reg.css">-->
+
     <!--<link rel="stylesheet" href="/css/log1.css">-->
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
