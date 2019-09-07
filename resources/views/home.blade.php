@@ -1,7 +1,7 @@
 @extends("layouts")
 
 @section("title")
-
+  Home
 @endsection
 
 @section("main")

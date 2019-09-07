@@ -7,12 +7,11 @@
       @yield("title")
     </title>
     <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/book.css">
-    <link rel="stylesheet" href="/css/categorias.css">
-    <link rel="stylesheet" href="/css/contacto.css">
-    <link rel="stylesheet" href="/css/music.css">
-    <link rel="stylesheet" href="/css/reg.css">
-    <link rel="stylesheet" href="/css/log1.css">
+  
+    <!--<link rel="stylesheet" href="/css/categorias.css">-->
+    <!--<link rel="stylesheet" href="/css/contacto.css">-->
+
+    <!--<link rel="stylesheet" href="/css/log1.css">-->
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -31,7 +30,7 @@
               <a href="/music">Music</a>
             </li>
             <li>
-              <a href="/Book">Books</a>
+              <a href="/books">Books</a>
             </li>
             <li>
               <a href="/carrito">carrito</a>
@@ -39,13 +38,16 @@
             <li>
               <a href="/contacto">contacto</a>
             </li>
+            <li>
+              <a href="/">Home</a>
+            </li>
 
             @if (Auth::check())
               <li>
                 <a href="/music/add">Add a Music</a>
               </li>
               <li>
-                <a href="/Book/add">Add a Books</a>
+                <a href="/book/add">Add a Books</a>
               </li>
             @endif
           </ul>
@@ -63,7 +65,7 @@
                 Hello {{Auth::user()->name}}!
 
               </li>
-              <img src="/storage/{{Auth::user()->avatar}}" alt="">
+                <img src="/storage/{{Auth::user()->avatar}}" alt="">
               <li>
                 <a href="{{ route('logout') }}"
                    onclick="event.preventDefault();
@@ -76,7 +78,7 @@
                 </form>
               </li>
             @else
-              <li>
+              <li class="validation">
                 <a href="/register">Register</a>
               </li>
               <li>
