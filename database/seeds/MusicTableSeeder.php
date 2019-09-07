@@ -14,7 +14,7 @@ class MusicTableSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('music')->insert([
+      DB::table('musics')->insert([
           'id' => '1',
           'titulo' => 'abbey road',
           'autor' => 'the beatles',
@@ -23,7 +23,7 @@ class MusicTableSeeder extends Seeder
           'category_id' => '1',
           'avatar'=>'/public/imagenes/images/Abeyroad.jpg',
      ]);
-     DB::table('music')->insert([
+     DB::table('musics')->insert([
          'id' => '2',
          'titulo' => 'ace of spades',
          'autor' => 'motorhead',
@@ -32,7 +32,7 @@ class MusicTableSeeder extends Seeder
          'category_id' => '1',
          'avatar'=>'/public/imagenes/images/Aceofspades.jpg',
     ]);
-    DB::table('music')->insert([
+    DB::table('musics')->insert([
         'id' => '3',
         'titulo' => 'es',
         'autor' => 'eruca sativa',
@@ -41,7 +41,7 @@ class MusicTableSeeder extends Seeder
         'category_id' => '1',
         'avatar'=>'/public/imagenes/images/eurucasativaes.jpg',
    ]);
-   DB::table('music')->insert([
+   DB::table('musics')->insert([
        'id' => '4',
        'titulo' => 'live era 87 93',
        'autor' => 'guns roses',
@@ -50,7 +50,7 @@ class MusicTableSeeder extends Seeder
        'category_id' => '1',
        'avatar'=>'/public/imagenes/images/gunsitos.jpg',
   ]);
-    DB::table('music')->insert([
+    DB::table('musics')->insert([
       'id' => '5',
       'titulo' => 'warning',
       'autor' => 'green day',
@@ -59,7 +59,7 @@ class MusicTableSeeder extends Seeder
       'category_id' => '1',
       'avatar'=>'/public/imagenes/images/GreenBand.jpg',
  ]);
-    DB::table('music')->insert([
+    DB::table('musics')->insert([
      'id' => '6',
      'titulo' => 'sonic temple',
      'autor' => 'the cult',
@@ -68,7 +68,7 @@ class MusicTableSeeder extends Seeder
      'category_id' => '1',
      'avatar'=>'/public/imagenes/images/TheCult.jpg',
 ]);
-    DB::table('music')->insert([
+    DB::table('musics')->insert([
     'id' => '7',
     'titulo' => 'nevermind',
     'autor' => 'nirvana',
@@ -77,7 +77,7 @@ class MusicTableSeeder extends Seeder
     'category_id' => '1',
     'avatar'=>'/public/imagenes/images/Nirvana0.jpg',
 ]);
-    DB::table('music')->insert([
+    DB::table('musics')->insert([
     'id' => '8',
     'titulo' => 'tercer arco',
     'autor' => 'los piojos',
@@ -86,7 +86,7 @@ class MusicTableSeeder extends Seeder
     'category_id' => '1',
     'avatar'=>'/public/imagenes/images/piojos.jpg',
 ]);
-    DB::table('music')->insert([
+    DB::table('musics')->insert([
     'id' => '9',
     'titulo' => 'believe',
     'autor' => 'justin biever',
@@ -95,7 +95,7 @@ class MusicTableSeeder extends Seeder
     'category_id' => '2',
     'avatar'=>'/public/imagenes/images/Justin_.jpg',
 ]);
-    DB::table('music')->insert([
+    DB::table('musics')->insert([
     'id' => '10',
     'titulo' => 'born this way',
     'autor' => 'justin biever',
@@ -104,7 +104,7 @@ class MusicTableSeeder extends Seeder
     'category_id' => '2',
     'avatar'=>'/public/imagenes/images/lady_gaga_born-this-way.jpg',
 ]);
-      DB::table('music')->insert([
+      DB::table('musics')->insert([
             'id' => '11',
             'titulo' => 'celebration',
             'autor' => 'madonna',
@@ -114,7 +114,7 @@ class MusicTableSeeder extends Seeder
             'avatar'=>'/public/imagenes/images/madon.jpg',
 ]);
 
-DB::table('music')->insert([
+DB::table('musics')->insert([
       'id' => '12',
       'titulo' => 'earth to mars',
       'autor' => 'bruno mars',
@@ -123,7 +123,7 @@ DB::table('music')->insert([
       'category_id' => '2',
       'avatar'=>'/public/imagenes/images/Mars.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
       'id' => '13',
       'titulo' => 'sing when you are winning',
       'autor' => 'robbie williams',
@@ -132,7 +132,7 @@ DB::table('music')->insert([
       'category_id' => '2',
       'avatar'=>'/public/imagenes/images/rwillim.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
       'id' => '14',
       'titulo' => 'dimelo',
       'autor' => 'paulo londra',
@@ -141,7 +141,7 @@ DB::table('music')->insert([
       'category_id' => '2',
       'avatar'=>'/public/imagenes/images/Londra.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
       'id' => '15',
       'titulo' => 'we are born',
       'autor' => 'sia',
@@ -150,7 +150,7 @@ DB::table('music')->insert([
       'category_id' => '2',
       'avatar'=>'/public/imagenes/images/Sia.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
       'id' => '16',
       'titulo' => 'pastel goth',
       'autor' => 'billie ellish',

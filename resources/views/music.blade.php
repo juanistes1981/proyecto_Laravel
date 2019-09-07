@@ -10,7 +10,7 @@
             <h1 class="display-4" id="titlemusic">Music</h1>
             <h2 class="title">Rock</h2>
         <p><a class="btn btn-secondary" href="/rock" role="button">Rock Music »</a></p>
-            <h2 class="title">Musica Pop</h2>
+            <h2 class="title">Pop</h2>
                 <p><a class="btn btn-secondary" href="/pop" role="button">POP Music »</a></p>
 
           </div>

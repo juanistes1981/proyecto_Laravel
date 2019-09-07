@@ -13,7 +13,7 @@ class BooksTableSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('books')->insert([
+      DB::table('book')->insert([
           'id' => '1',
           'titulo' => 'orgullo y prejuicio',
           'autor' => 'jane austen',
@@ -22,7 +22,7 @@ class BooksTableSeeder extends Seeder
           'category_id' => '3',
           'avatar'=>'/public/imagenes/novelas/orgullo.jpg',
      ]);
-     DB::table('books')->insert([
+     DB::table('book')->insert([
          'id' => '2',
          'titulo' => 'el grito de la tierra',
          'autor' => 'sarah lark',
@@ -31,7 +31,7 @@ class BooksTableSeeder extends Seeder
          'category_id' => '3',
          'avatar'=>'/public/imagenes/novelas/grito.jpg',
     ]);
-    DB::table('books')->insert([
+    DB::table('book')->insert([
         'id' => '3',
         'titulo' => 'yo antes de ti',
         'autor' => 'jojo moyes',
@@ -40,7 +40,7 @@ class BooksTableSeeder extends Seeder
         'category_id' => '3',
         'avatar'=>'/public/imagenes/novelas/jojo.jpg',
    ]);
-   DB::table('books')->insert([
+   DB::table('book')->insert([
        'id' => '4',
        'titulo' => 'el amante japones',
        'autor' => 'isabel allende',
@@ -49,7 +49,7 @@ class BooksTableSeeder extends Seeder
        'category_id' => '3',
        'avatar'=>'/public/imagenes/novelas/amante.jpg',
   ]);
-    DB::table('books')->insert([
+    DB::table('book')->insert([
       'id' => '5',
       'titulo' => 'la casa torcida',
       'autor' => 'agatha christie',
@@ -58,7 +58,7 @@ class BooksTableSeeder extends Seeder
       'category_id' => '4',
       'avatar'=>'/public/imagenes/policiales/casa.jpg',
  ]);
-    DB::table('books')->insert([
+    DB::table('book')->insert([
      'id' => '6',
      'titulo' => 'cuentos policiales',
      'autor' => 'borges y casares',
@@ -67,7 +67,7 @@ class BooksTableSeeder extends Seeder
      'category_id' => '4',
      'avatar'=>'/public/imagenes/policiales/cuentos.jpg',
 ]);
-    DB::table('books')->insert([
+    DB::table('book')->insert([
     'id' => '7',
     'titulo' => 'asesinato en el orient express',
     'autor' => 'agatha christie',
@@ -76,7 +76,7 @@ class BooksTableSeeder extends Seeder
     'category_id' => '4',
     'avatar'=>'/public/imagenes/policiales/orient.jpg',
 ]);
-    DB::table('books')->insert([
+    DB::table('book')->insert([
     'id' => '8',
     'titulo' => 'telon',
     'autor' => 'agatha christie',
@@ -85,7 +85,7 @@ class BooksTableSeeder extends Seeder
     'category_id' => '4',
     'avatar'=>'/public/imagenes/policiales/telon.jpg',
 ]);
-    DB::table('books')->insert([
+    DB::table('book')->insert([
     'id' => '9',
     'titulo' => 'el principito',
     'autor' => 'antoine de saint exupery',
@@ -94,7 +94,7 @@ class BooksTableSeeder extends Seeder
     'category_id' => '5',
     'avatar'=>'/public/imagenes/infantiles/principito.jpg',
 ]);
-    DB::table('books')->insert([
+    DB::table('book')->insert([
     'id' => '10',
     'titulo' => 'peter pan',
     'autor' => 'j.m barrie',
@@ -103,7 +103,7 @@ class BooksTableSeeder extends Seeder
     'category_id' => '5',
     'avatar'=>'/public/imagenes/infantiles/peter.jpg',
 ]);
-      DB::table('books')->insert([
+      DB::table('book')->insert([
             'id' => '11',
             'titulo' => 'narnia',
             'autor' => 'c.s lewis',
@@ -113,7 +113,7 @@ class BooksTableSeeder extends Seeder
             'avatar'=>'/public/imagenes/infantiles/narnia.jpg',
 ]);
 
-DB::table('books')->insert([
+DB::table('book')->insert([
       'id' => '12',
       'titulo' => 'mago de oz',
       'autor' => 'frank baum',
