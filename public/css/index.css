@@ -1,5 +1,5 @@
-body{
-background-color: grey;
+header{
+background-color: black;
 box-sizing: border-box;
 }
 header ul{
@@ -7,7 +7,8 @@ list-style-type: none;
 display: flex;
 flex-wrap: wrap;
 margin-top: 30px;
-
+font-size: 20px;
+font-style: italic;
 }
 header li{
 margin-right: 20px;

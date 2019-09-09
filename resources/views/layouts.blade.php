@@ -7,11 +7,6 @@
       @yield("title")
     </title>
     <link rel="stylesheet" href="/css/app.css">
-  
-    <!--<link rel="stylesheet" href="/css/categorias.css">-->
-    <!--<link rel="stylesheet" href="/css/contacto.css">-->
-
-    <!--<link rel="stylesheet" href="/css/log1.css">-->
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -44,7 +39,7 @@
 
             @if (Auth::check())
               <li>
-                <a href="/music/add">Add a Music</a>
+                <a href="/addmusic">Add a Music</a>
               </li>
               <li>
                 <a href="/book/add">Add a Books</a>

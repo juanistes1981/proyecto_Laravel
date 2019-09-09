@@ -14,9 +14,8 @@ class musicController extends Controller
   }
 
   public function detail($id) {
-    $music = Music::find($id);
-
-    return view("music", compact("music"));
+   $vac=compact('id');
+   return view('music',$vac);
   }
 
   public function search(Request $req) {
@@ -28,9 +27,9 @@ class musicController extends Controller
   }
 
   public function add() {
-    $categories = Category::all();
+    $categories = category::all();
 
-    return view("addMusic", compact("categories"));
+    return view("addmusic", compact("categories"));
   }
 
   public function store(Request $req) {
@@ -55,7 +54,7 @@ class musicController extends Controller
     $music->avatar=$req->avatar;
     $music->save();
 
-    return redirect("/music" . $music->id);
+    return redirect("/addmusic" . $music->id);
   }
 
   public function delete(Request $req) {
