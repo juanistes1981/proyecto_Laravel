@@ -39,3 +39,5 @@ Route::get('/pop','MusicController@detail');
 Route::get('/novelas','BooksController@detail');
 Route::get('/policiales','BooksController@detail');
 Route::get('/infantiles','BooksController@detail');
+
+Route::get('/faq','FaqController@faq');

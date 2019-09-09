@@ -2,36 +2,35 @@ body{
 background-color: grey;
 box-sizing: border-box;
 }
-header ul{
+ header ul{
 list-style-type: none;
 display: flex;
-flex-wrap: wrap;
-margin-top: 30px;
+flex-wrap: nowrap;
 
 }
-header li{
-margin-right: 20px;
+nav{
+  background-color:#424949  ;
+;
 
+}
+ header ul li{
+margin-right: 20px;
+color:grey;
+}
+header ul li a{
+color:grey;
 }
 ul.links{
-  margin-top: 20px;
+  text-align: center;
+  margin-top: 10px;
+  color:grey;
 }
-header nav{
- display: flex;
- flex-wrap: wrap;
-}
-header form{
+
+ nav form{
   display: flex;
-  margin top:40px;
-  }
-header form input{
-  width: 150px
-  margin-right:10px;
-}
-header form button{
-  height: 30px;
-  margin top:40px;
-}
+    }
+
+
 header ul img{
   width: 40px;
   border-radius: 50%;
@@ -45,17 +44,30 @@ header ul img{
   color: white;
   width: 100%;
 }
-
-#logo {
-  top: 20px;
-  left: 5px;
-  width: 10%;
-  border-radius: 90px;
-  border: 1px solid #ccc;
+.container-faq{
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
+.container-faq h3{
+  background-color: #BDC3C7;
+  height: 48px;
+
+}
+.container-faq p{
+  font-size: 20px;
+
+}
+
 #search{
-  color:grey;
-  border-color: grey;
+  display: flex;
+  justify-content: space-around; 
+  text-align: center;
+  color: white;
+  background-color: #7F8C8D;
+  border-color: #7F8C8D;
+
+
+
 }
 .carousel{
 
