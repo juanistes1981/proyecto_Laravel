@@ -36,14 +36,14 @@
                           <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                           </li>
-                          <li class="nav-item"><a class="nav-link" href="book.php">Book</a></li>
-                          <li class="nav-item"><a class="nav-link " href="music.php">Music</a></li>
+                          <li class="nav-item"><a class="nav-link" href="/book">Book</a></li>
+                          <li class="nav-item"><a class="nav-link " href="/music">Music</a></li>
 
-                          <li class="nav-item"><a class="nav-link " href="login.php">Contacto</a></li>
+                          <li class="nav-item"><a class="nav-link " href="/contacto">Contacto</a></li>
 
-                          <li class="nav-item"><a class="nav-link " href="register.php">Preguntas</a></li>
+                          <li class="nav-item"><a class="nav-link " href="/faq">Preguntas</a></li>
 
-                          <li class="nav-item"><a class="nav-link " href="register.php">Carrito</a></li>
+                          <li class="nav-item"><a class="nav-link " href="/cart">Carrito</a></li>
 
                           @if (Auth::check())
                             <li><a href="/music/add">Add Music</a></li>
