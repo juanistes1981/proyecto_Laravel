@@ -45,6 +45,18 @@
                           <li class="nav-item"><a class="nav-link " href="/faq">Preguntas</a></li>
 
                           <li class="nav-item"><a class="nav-link " href="/cart">Carrito</a></li>
+                          <li class="nav-item"><a class="nav-link " href="register.php">Carrito</a></li>
+                            <span class="badge badge-pill badge-danger">{{ count((array) session('cart')) }}</span>
+
+                                                  <?php $total = 0 ?>
+                                                  @foreach((array) session('cart') as $id => $details)
+                                                      <?php $total += $details['price'] * $details['quantity'] ?>
+                                                  @endforeach
+
+
+                                                      <p>Total: <span class="text-info">$ {{ $total }}</span></p>
+
+
 
                           @if (Auth::check())
                             <li><a href="/music/add">Add Music</a></li>
