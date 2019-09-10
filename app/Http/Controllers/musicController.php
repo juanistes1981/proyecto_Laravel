@@ -22,9 +22,9 @@ class musicController extends Controller
   public function search(Request $req) {
     $search = $req["search"];
 
-    $musics = Music::where("name", "like", "%" . $search . "%")->get();
+    $musics = Music::where("titulo", "like", "%" . $search . "%")->get();
 
-    return view("search", compact("music", "search"));
+    return view("search", compact("musics", "search"));
   }
 
   public function add() {
@@ -55,7 +55,7 @@ class musicController extends Controller
     $music->avatar=$req->avatar;
     $music->save();
 
-    return redirect("/music" . $music->id);
+    return redirect("/addmusic" . $music->id);
   }
 
   public function delete(Request $req) {

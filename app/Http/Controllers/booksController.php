@@ -11,7 +11,7 @@ class BooksController extends Controller
   public function all() {
     $books = book::paginate(20); //probar con music
 
-    return view("books", compact("books"));
+    return view("book", compact("books"));
   }
 
   public function detail($id) {
@@ -23,7 +23,7 @@ class BooksController extends Controller
   public function search(Request $req) {
     $search = $req["search"];
 
-    $books = Book::where("name", "like", "%" . $search . "%")->get();
+    $books = book::where("titulo", "like", "%" . $search . "%")->get();
 
     return view("search", compact("books", "search"));
   }

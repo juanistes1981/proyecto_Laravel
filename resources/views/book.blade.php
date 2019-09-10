@@ -20,14 +20,14 @@
 
 
   <ul>
-    @forelse ($books as $books)
+    @forelse ($books as $book)
       <li>
-        <a href="/book/{{$books->id}}">
-            <li class="base"> {{$books->titulo}}</li>
-            <li class="base"> {{$books->autor}}</li>
-            <li class="base"> {{$books->price}}</li>
-            <li class="base"> {{$books->stock}}</li>
-            <li class="base"> {{$books->avatar}}</li>
+        <a href="/book/{{$book->id}}">
+            <li class="base">titulo:{{$book->titulo}}</li>
+            <li class="base">Autor:{{$book->Autor}}</li>
+            <li class="base">Precio:${{$book->price}}</li>
+            <li class="base">Stock:{{$book->stock}}</li>
+            <li class="base"><img src="{{$book->avatar}}" alt=""> </li>
 
         </a>
       </li>
@@ -40,5 +40,5 @@
       </p>
     @endforelse
   </ul>
-    {{$books->links}}
+    {{$book->links}}
   @endsection

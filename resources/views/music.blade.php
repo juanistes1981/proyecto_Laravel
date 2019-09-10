@@ -21,11 +21,11 @@
   @forelse ($music as $music)
     <li>
       <a href="/music/{{$music->id}}">
-        <li class="base">{{$music->titulo}}  </li>
-        <li class="base">{{$music->autor}}</li>
-        <li class="base">{{$music->price}}</li>
-        <li class="base">{{$music->stock}}</li>
-        <li class="base">{{$music->avatar}}</li>
+        <li class="base">titulo:{{$music->titulo}}  </li>
+        <li class="base">Autor:{{$music->autor}}</li>
+        <li class="base">Precio:${{$music->price}}</li>
+        <li class="base">Stock:{{$music->stock}}</li>
+        <li class="base"><img src="{{$music->avatar}}" alt=""></li>
 
       </a>
     </li>
