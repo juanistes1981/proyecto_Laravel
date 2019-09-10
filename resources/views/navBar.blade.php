@@ -50,26 +50,49 @@
                         </div>
                       </li>
 
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias libros</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                          <a class="dropdown-item" href="/book.php/#autoayuda">Autoayuda</a>
-                          <a class="dropdown-item" href="#terror">Terror&Suspenso</a>
-                          <a class="dropdown-item" href="#viajes">Viajes</a>
-                          <a class="dropdown-item" href="#infantil">Infantil</a>
-                          <a class="dropdown-item" href="#novelas">Novelas</a>
-                          <a class="dropdown-item" href="#ficcion">Ficción</a>
-                          <a class="dropdown-item" href="#ciencia">Ciencias</a>
-                          <a class="dropdown-item" href="#policial">Policial</a>
-                          <a class="dropdown-item" href="#cocina">Cocina</a>
-                          <a class="dropdown-item" href="#juvenil">Juvenil</a>
-                        </div>
-                      </li>
+
                     </ul>
-                    <form class="form-inline my-2 my-lg-0" method="post">
+                    <ul>
+                      @if (Auth::check())
+                        <li><a href="/music/add">Add a Music</a></li>
+
+                        <li><a href="/book/add">Add a Books</a></li>
+                      @endif
+
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0" action="/search" method="get">
+                        @csrf
                       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                       <button id="search" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
+
+                    <ul>
+                        @if (Auth::check())
+                          <li>
+                            Hello {{Auth::user()->name}}!
+
+                          </li>
+                            <img src="/storage/{{Auth::user()->avatar}}" alt="">
+                          <li>
+                            <a href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                          </li>
+                      </ul>
+                      @else
+                      <ul class="nav navbar-nav navbar-right">
+                          <li class="validation"><a href="/register"><span class="glyphicon glyphicon-user"></span>Register</a></li>
+
+                          <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+
+                      @endif
+                    </ul>
                   </div>
       </nav>
 </html>

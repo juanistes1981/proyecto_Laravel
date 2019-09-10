@@ -33,3 +33,5 @@ Route::get('/pedidos', 'BooksController@detalle');
 Route::get('/pedidos', 'categoriesController@detalle');
 Route::get('/cart', 'cartsController@cart');
 Route::get("/addtocart/{id}", "cartsController@addToCart");
+
+Route::get('/faq','FaqController@faq');
