@@ -55,6 +55,7 @@
 
                             <div class="col-md-6">
                                 <input id="avatar" type="file" class="form-control @error('avatar') is-invalid @enderror" name="avatar" value="{{ old('avatar') }}" required autocomplete="avatar" autofocus>
+                                <input id="avatar" type="image" enctype="multipart/form-data" class="form-control @error('avatar') is-invalid @enderror" name="avatar" value="{{ old('avatar') }}" required autocomplete="avatar" autofocus>
 
                                 @error('avatar')
                                     <span class="invalid-feedback" role="alert">
@@ -62,7 +63,7 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>  
+                        </div>
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
