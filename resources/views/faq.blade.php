@@ -9,16 +9,16 @@
 @endsection
 
 @section("main")
-<body>
+
   <div class="jumbotron">
     <h1>Preguntas Frecuentes</h1>
   </div>
   <div class="container-faq">
       <h3>¿Cuáles son los medios de pago aceptados?</h3>
-            <p>Los medios de pago aceptados son:
+            <p>Los medios de pago aceptados son:</p>
 
-            -Tarjetas de Débito y Credito Visa o Mastercard
-            -Pago mis cuentas</p>
+            <p>-Tarjetas de Débito y Credito Visa o Mastercard</p>
+            <p>-Pago mis cuentas</p>
 
     </div>
 
@@ -37,7 +37,7 @@
 <div class="container-faq">
         <h3>Me gustaría enviar un regalo, ¿es posible?</h3>
 
-        <p>Por supuesto! no pierdas la oportuniad de hacer el mejor regalo. Inicanos en la direcion de envio donde deseas que llegue e indica que deseas recibir la factura a tu email.</p>
+        <p>Por supuesto! no pierdas la oportuniad de hacer el mejor regalo. Indicala dirección y recibiras la factura en tu email.</p>
 </div>
 
 <div class="container-faq">
@@ -45,6 +45,6 @@
 
       <p>Haga clic en la página de "Contactos" y envíenos su pregunta, le responderemos tan pronto como sea posible.</p>
 </div>
-</body>
+
 
 @endsection
