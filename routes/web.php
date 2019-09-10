@@ -22,10 +22,16 @@ Route::get('/login', "LoginController@ver");
 
 
 Auth::routes();
+Route::get('/shop', 'HomeController@home');
 Route::get('/', 'HomeController@home');
 Route::get('/home', 'HomeController@home');
 Route::get('/music', 'MusicController@all');
 Route::get('/books', 'BooksController@all');
-Route::get('/categories/{id}','MusicController@detail');
-Route::get('/book/add','BooksController@add')->middleware("Auth");
-Route::get('/music/add','MusicController@add')->middleware("Auth");
+Route::get('/categories', 'CategoriesController@all');
+Route::get('/pedidos', 'MusicController@detalle');
+Route::get('/pedidos', 'BooksController@detalle');
+Route::get('/pedidos', 'categoriesController@detalle');
+Route::get('/cart', 'cartsController@cart');
+Route::get("/addtocart/{id}", "cartsController@addToCart");
+
+Route::get('/faq','FaqController@faq');

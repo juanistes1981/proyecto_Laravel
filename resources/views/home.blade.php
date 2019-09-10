@@ -4,8 +4,6 @@
   Home
 @endsection
 
-
-
 @section("main")
   <section class="carousel">
 

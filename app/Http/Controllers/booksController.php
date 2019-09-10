@@ -11,7 +11,7 @@ class BooksController extends Controller
   public function all() {
     $books = book::paginate(20); //probar con music
 
-    return view("book", compact("books"));
+    return view("books", compact("books"));
   }
 
   public function detail($id) {

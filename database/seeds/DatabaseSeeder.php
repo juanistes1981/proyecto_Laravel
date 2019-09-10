@@ -11,12 +11,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-/**  DB::table('books')->insert([
+      DB::table('books')->insert([
           'id' => '1',
           'titulo' => 'orgullo y prejuicio',
           'autor' => 'jane austen',
-          'stock' => '200',
           'price' => '500',
+          'stock' => '200',
           'category_id' => '3',
           'avatar'=>'/public/imagenes/novelas/orgullo.jpg',
      ]);
@@ -24,8 +24,8 @@ class DatabaseSeeder extends Seeder
          'id' => '2',
          'titulo' => 'el grito de la tierra',
          'autor' => 'sarah lark',
-         'stock' => '390',
          'price' => '500',
+         'stock' => '390',
          'category_id' => '3',
          'avatar'=>'/public/imagenes/novelas/grito.jpg',
     ]);
@@ -33,8 +33,8 @@ class DatabaseSeeder extends Seeder
         'id' => '3',
         'titulo' => 'yo antes de ti',
         'autor' => 'jojo moyes',
-        'stock' => '100',
         'price' => '480',
+        'stock' => '100',
         'category_id' => '3',
         'avatar'=>'/public/imagenes/novelas/jojo.jpg',
    ]);
@@ -42,8 +42,8 @@ class DatabaseSeeder extends Seeder
        'id' => '4',
        'titulo' => 'el amante japones',
        'autor' => 'isabel allende',
-       'stock' => '100',
        'price' => '290',
+       'stock' => '100',
        'category_id' => '3',
        'avatar'=>'/public/imagenes/novelas/amante.jpg',
   ]);
@@ -51,8 +51,8 @@ class DatabaseSeeder extends Seeder
       'id' => '5',
       'titulo' => 'la casa torcida',
       'autor' => 'agatha christie',
-      'stock' => '69',
       'price' => '600',
+      'stock' => '69',
       'category_id' => '4',
       'avatar'=>'/public/imagenes/policiales/casa.jpg',
  ]);
@@ -60,8 +60,8 @@ class DatabaseSeeder extends Seeder
      'id' => '6',
      'titulo' => 'cuentos policiales',
      'autor' => 'borges y casares',
-     'stock' => '80',
      'price' => '430',
+     'stock' => '80',
      'category_id' => '4',
      'avatar'=>'/public/imagenes/policiales/cuentos.jpg',
 ]);
@@ -69,8 +69,8 @@ class DatabaseSeeder extends Seeder
     'id' => '7',
     'titulo' => 'asesinato en el orient express',
     'autor' => 'agatha christie',
-    'stock' => '90',
     'price' => '500',
+    'stock' => '90',
     'category_id' => '4',
     'avatar'=>'/public/imagenes/policiales/orient.jpg',
 ]);
@@ -78,8 +78,8 @@ class DatabaseSeeder extends Seeder
     'id' => '8',
     'titulo' => 'telon',
     'autor' => 'agatha christie',
-    'stock' => '200',
     'price' => '480',
+    'stock' => '200',
     'category_id' => '4',
     'avatar'=>'/public/imagenes/policiales/telon.jpg',
 ]);
@@ -87,8 +87,8 @@ class DatabaseSeeder extends Seeder
     'id' => '9',
     'titulo' => 'el principito',
     'autor' => 'antoine de saint exupery',
-    'stock' => '20',
     'price' => '800',
+    'stock' => '20',
     'category_id' => '5',
     'avatar'=>'/public/imagenes/infantiles/principito.jpg',
 ]);
@@ -96,8 +96,8 @@ class DatabaseSeeder extends Seeder
     'id' => '10',
     'titulo' => 'peter pan',
     'autor' => 'j.m barrie',
-    'stock' => '50',
     'price' => '400',
+    'stock' => '50',
     'category_id' => '5',
     'avatar'=>'/public/imagenes/infantiles/peter.jpg',
 ]);
@@ -105,8 +105,8 @@ class DatabaseSeeder extends Seeder
             'id' => '11',
             'titulo' => 'narnia',
             'autor' => 'c.s lewis',
-            'stock' => '50',
             'price' => '400',
+            'stock' => '50',
             'category_id' => '5',
             'avatar'=>'/public/imagenes/infantiles/narnia.jpg',
 ]);
@@ -115,177 +115,156 @@ DB::table('books')->insert([
       'id' => '12',
       'titulo' => 'mago de oz',
       'autor' => 'frank baum',
-      'stock' => '70',
       'price' => '580',
+      'stock' => '70',
       'category_id' => '5',
       'avatar'=>'/public/imagenes/infantiles/oz.jpg',
-]);**/
-DB::table('music')->insert([
+]);
+/*DB::table('musics')->insert([
     'id' => '1',
     'titulo' => 'abbey road',
     'autor' => 'the beatles',
-    'price' => '630',
     'stock' => '200',
+    'price' => '630',
     'category_id' => '1',
     'avatar'=>'/public/imagenes/images/Abeyroad.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
    'id' => '2',
    'titulo' => 'ace of spades',
    'autor' => 'motorhead',
-   'price' => '139',
    'stock' => '100',
+   'price' => '139',
    'category_id' => '1',
    'avatar'=>'/public/imagenes/images/Aceofspades.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
   'id' => '3',
   'titulo' => 'es',
   'autor' => 'eruca sativa',
-  'price' => '100',
   'stock' => '200',
+  'price' => '100',
   'category_id' => '1',
   'avatar'=>'/public/imagenes/images/eurucasativaes.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
  'id' => '4',
  'titulo' => 'live era 87 93',
  'autor' => 'guns roses',
- 'price' => '280',
  'stock' => '200',
+ 'price' => '280',
  'category_id' => '1',
  'avatar'=>'/public/imagenes/images/gunsitos.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
 'id' => '5',
 'titulo' => 'warning',
 'autor' => 'green day',
-'price' => '120',
 'stock' => '100',
+'price' => '120',
 'category_id' => '1',
 'avatar'=>'/public/imagenes/images/GreenBand.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
 'id' => '6',
 'titulo' => 'sonic temple',
 'autor' => 'the cult',
-'price' => '150',
 'stock' => '150',
+'price' => '150',
 'category_id' => '1',
 'avatar'=>'/public/imagenes/images/TheCult.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
 'id' => '7',
 'titulo' => 'nevermind',
 'autor' => 'nirvana',
-'price' => '100',
 'stock' => '200',
+'price' => '100',
 'category_id' => '1',
 'avatar'=>'/public/imagenes/images/Nirvana0.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
 'id' => '8',
 'titulo' => 'tercer arco',
 'autor' => 'los piojos',
-'price' => '230',
 'stock' => '100',
+'price' => '230',
 'category_id' => '1',
 'avatar'=>'/public/imagenes/images/piojos.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
 'id' => '9',
 'titulo' => 'believe',
 'autor' => 'justin biever',
-'price' => '300',
 'stock' => '500',
+'price' => '300',
 'category_id' => '2',
 'avatar'=>'/public/imagenes/images/Justin_.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
 'id' => '10',
 'titulo' => 'born this way',
 'autor' => 'justin biever',
-'price' => '139',
 'stock' => '200',
+'price' => '139',
 'category_id' => '2',
 'avatar'=>'/public/imagenes/images/lady_gaga_born-this-way.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
       'id' => '11',
       'titulo' => 'celebration',
       'autor' => 'madonna',
-      'price' => '100',
       'stock' => '200',
+      'price' => '100',
       'category_id' => '2',
       'avatar'=>'/public/imagenes/images/madon.jpg',
 ]);
 
-DB::table('music')->insert([
+DB::table('musics')->insert([
 'id' => '12',
 'titulo' => 'earth to mars',
 'autor' => 'bruno mars',
-'price' => '219',
 'stock' => '200',
+'price' => '219',
 'category_id' => '2',
 'avatar'=>'/public/imagenes/images/Mars.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
 'id' => '13',
 'titulo' => 'sing when you are winning',
 'autor' => 'robbie williams',
-'price' => '180',
 'stock' => '200',
+'price' => '180',
 'category_id' => '2',
 'avatar'=>'/public/imagenes/images/rwillim.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
 'id' => '14',
 'titulo' => 'dimelo',
 'autor' => 'paulo londra',
-'price' => '100',
 'stock' => '500',
+'price' => '100',
 'category_id' => '2',
 'avatar'=>'/public/imagenes/images/Londra.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
 'id' => '15',
 'titulo' => 'we are born',
 'autor' => 'sia',
-'price' => '180',
 'stock' => '200',
+'price' => '180',
 'category_id' => '2',
 'avatar'=>'/public/imagenes/images/Sia.jpg',
 ]);
-DB::table('music')->insert([
+DB::table('musics')->insert([
 'id' => '16',
 'titulo' => 'pastel goth',
 'autor' => 'billie ellish',
-'price' => '230',
 'stock' => '300',
+'price' => '230',
 'category_id' => '2',
 'avatar'=>'/public/imagenes/images/BilieElish.jpg',
-]);
-
-/**DB::table('categories_tabla')->insert([
-'id' => '1',
-'name' => 'rock',
-]);
-DB::table('categories_tabla')->insert([
-'id' => '2',
-'name' => 'pop',
-]);
-DB::table('categories_tabla')->insert([
-'id' => '3',
-'name' => 'novelas',
-]);
-DB::table('categories_tabla')->insert([
-'id' => '4',
-'name' => 'policiales',
-]);
-DB::table('categories_tabla')->insert([
-'id' => '5',
-'name' => 'infantiles',
-]);**/
+]);*/
 
     }
 }

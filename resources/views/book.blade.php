@@ -17,7 +17,7 @@
 
             </div>
     </div>
-    <h1> Todos nuestros titulos</h1>
+
 
   <ul>
     @forelse ($books as $books)

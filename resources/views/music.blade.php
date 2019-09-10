@@ -9,7 +9,7 @@
           <div class="container">
             <h1 class="display-4" id="titlemusic">Music</h1>
             <h2 class="title">Rock</h2>
-        <p><a class="btn btn-secondary" href="/categories" role="button">Rock Music »</a></p>
+        <p><a class="btn btn-secondary" href="/rock" role="button">Rock Music »</a></p>
             <h2 class="title">Pop</h2>
                 <p><a class="btn btn-secondary" href="/pop" role="button">POP Music »</a></p>
 
@@ -21,10 +21,10 @@
   @forelse ($music as $music)
     <li>
       <a href="/music/{{$music->id}}">
-        <li class="base">Titulo:{{$music->titulo}}</li>
-        <li class="base">Autor:{{$music->autor}}</li>
-        <li class="base">precio:${{$music->price}}</li>
-        <li class="base">stock:{{$music->stock}}</li>
+        <li class="base">{{$music->titulo}}  </li>
+        <li class="base">{{$music->autor}}</li>
+        <li class="base">{{$music->price}}</li>
+        <li class="base">{{$music->stock}}</li>
         <li class="base">{{$music->avatar}}</li>
 
       </a>
