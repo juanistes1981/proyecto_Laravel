@@ -31,4 +31,5 @@ Route::get('/categories', 'CategoriesController@all');
 Route::get('/pedidos', 'MusicController@detalle');
 Route::get('/pedidos', 'BooksController@detalle');
 Route::get('/pedidos', 'categoriesController@detalle');
-Route::get('/cart', 'CartController@index');
+Route::get('/cart', 'cartsController@cart');
+Route::get("/addtocart/{id}", "cartsController@addToCart");
