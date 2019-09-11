@@ -67,8 +67,11 @@ header ul img{
 .dropdown-item a{
   color: #273746;
 }
-#lupa{
-  font-family: 'icomoon' !important;
+.badge {
+width: 37px;
+margin-top: 10px!important;
+height: 2.1em;
+margin-right: 1.5em;
 }
 #search{
   display: flex;
