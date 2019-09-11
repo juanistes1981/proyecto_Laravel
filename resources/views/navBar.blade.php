@@ -47,7 +47,6 @@
                           <a class="dropdown-item" href="contacto.php">Contacto</a>
                           <a class="dropdown-item" href="faq.php">Preguntas Fecuentes</a>
                           <a class="dropdown-item" href="carrito.php">Carrito de Compras</a>
-                        </div>
                       </li>
 
 

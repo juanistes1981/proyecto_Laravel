@@ -34,8 +34,12 @@
                       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                         <ul class="navbar-nav mr-auto">
                           <li class="nav-item active">
+<<<<<<< HEAD
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             
+=======
+                            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+>>>>>>> 5a72890f9392cdaa71127e927f2e25b79d6f84e8
                           </li>
                           <li class="nav-item"><a class="nav-link" href="/book">Book</a></li>
                           <li class="nav-item"><a class="nav-link " href="/music">Music</a></li>
@@ -43,8 +47,20 @@
                           <li class="nav-item"><a class="nav-link " href="/contacto">Contacto</a></li>
 
                           <li class="nav-item"><a class="nav-link " href="/faq">Preguntas</a></li>
-
+                              @if (Auth::check())
                           <li class="nav-item"><a class="nav-link " href="/cart">Carrito</a></li>
+
+                            <span class="badge badge-pill badge-danger">{{ count((array) session('cart')) }}</span>
+
+                                                  <?php $total = 0 ?>
+                                                  @foreach((array) session('cart') as $id => $details)
+                                                      <?php $total += $details['price'] * $details['quantity'] ?>
+                                                  @endforeach
+
+
+                                                      <p>Total: <span class="text-info">$ {{ $total }}</span></p>
+
+@endif
 
                           @if (Auth::check())
                             <li><a href="/music/add">Add Music</a></li>
