@@ -26,29 +26,19 @@
       <header>
 
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <a class="navbar-brand" href="/HomeController">Book&Music</a>
+                <a class="navbar-brand" href="#">Book&Music</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
 
                       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                         <ul class="navbar-nav mr-auto">
-<<<<<<< HEAD
                           <li class="nav-item active">
                             <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                           </li>
-=======
-
->>>>>>> master
                           <li class="nav-item"><a class="nav-link" href="/book">Book</a></li>
                           <li class="nav-item"><a class="nav-link " href="/music">Music</a></li>
-                          <div class="dropdown" id="dropdown" >
-                <a class="nav-link" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Menu
-                </a>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="dropmenu">
 
-<<<<<<< HEAD
                           <li class="nav-item"><a class="nav-link " href="/contacto">Contacto</a></li>
 
                           <li class="nav-item"><a class="nav-link " href="/faq">Preguntas</a></li>
@@ -56,38 +46,31 @@
                           <li class="nav-item"><a class="nav-link " href="/cart">Carrito</a></li>
 
                             <span class="badge badge-pill badge-danger">{{ count((array) session('cart')) }}</span>
-=======
->>>>>>> master
 
-                            <div class="dropdown-divider" id="divider"></div>
-                            <button class="dropdown-item" id="dropitem" type="button"><a href = "/cart">Carrito</a></button>
-                            <div class="dropdown-divider" id="divider"></div>
-                            <button class="dropdown-item" id="dropitem" type="button"><a href="/contacto">Contacto</a></button>
-                            <div class="dropdown-divider" id="divider"></div>
-                            <button class="dropdown-item" id="dropitem" type="button"> <a  href="/preguntas">Preguntas Frecuentes</a></button>
-                            <div class="dropdown-divider" id="divider"></div>
-                            @if (Auth::check())
-                            <button class="dropdown-item" id="dropitem" type="button"><a href="/music/add">Add Music</a></button>
-                            <div class="dropdown-divider" id="divider"></div>
-                            <button class="dropdown-item" id="dropitem" type="button"><a href="/book/add">Add Books</a></button>
-                            <div class="dropdown-divider" id="divider"></div>
-                            @endif
-                          </div>
+                                                  <?php $total = 0 ?>
+                                                  @foreach((array) session('cart') as $id => $details)
+                                                      <?php $total += $details['price'] * $details['quantity'] ?>
+                                                  @endforeach
 
 
+                                                      <p>Total: <span class="text-info">$ {{ $total }}</span></p>
 
 @endif
 
+                          @if (Auth::check())
+                            <li><a href="/music/add">Add Music</a></li>
+
+                            <li><a href="/book/add">Add Books</a></li>
+                          @endif
+
                     </ul>
-
-
                         <form class="form-inline my-2 my-lg-0" action="/search" method="get">
                             @csrf
                             @section("js")
                                 <script src="/js/search.js" charset="utf-8"></script>
                                   @endsection
                           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                          <button id="search" class="btn btn-outline-success " type="submit">Search</button>
+                          <button id="search" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
 
                         <ul class="auth">
