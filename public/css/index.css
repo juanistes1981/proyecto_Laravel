@@ -39,6 +39,9 @@ header ul img{
   margin left: 5px;
   margin-right: 10px;
 }
+.jumbotron{
+  margin-top: 55px;
+}
 .container-fluid{
   background-color: #17202A ;
   color: white;
@@ -57,10 +60,19 @@ header ul img{
   font-size: 20px;
 
 }
+#dropmenu{
+  background-color: #E5E8E8
 
+}
+.dropdown-item a{
+  color: #273746;
+}
+#lupa{
+  font-family: 'icomoon' !important;
+}
 #search{
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
   text-align: center;
   color: white;
   background-color: #7F8C8D;
