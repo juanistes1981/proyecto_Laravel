@@ -55,15 +55,15 @@ class musicController extends Controller
     $music->avatar=$req->avatar;
     $music->save();
 
-    return redirect("/addmusic" . $music->id);
+    return redirect("/music" . $music->id);
   }
 
   public function delete(Request $req) {
     $idmusic = $req["id"];
 
-    $musics = Product::find($idmusic);
+    $musics = Music::find($idmusic);
 
-    $musics->delete();
+    /*$musics->delete();*/
 
     return redirect("/");
   }

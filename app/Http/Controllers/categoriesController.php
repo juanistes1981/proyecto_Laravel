@@ -10,7 +10,7 @@ class CategoriesController extends Controller
     public function all() {
       $categories = Category::all();
 
-      return view("categories", compact("categories"));
+      return view("category", compact("categories"));
     }
 
     public function detail($id) {

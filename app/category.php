@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class category extends Model
 {
     public $guarded =[];
+    protected $table = 'categories_tabla';
 
     public function book(){
 
