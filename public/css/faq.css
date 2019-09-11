@@ -1,5 +1,12 @@
-.jumbotron{
-  background-color: black;
+div img#preguntas {
+
+width: 100%!important;
+margin-top: 2em;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 0!important;
+  margin-left: 0;
+  height: 323px;
 }
 .container-faq{
   margin-top: 3%;
@@ -11,3 +18,4 @@ h3{
  line-height: 18px;
  font-size: 10px;
 }
+/* Aca va la parte de FAQ */
