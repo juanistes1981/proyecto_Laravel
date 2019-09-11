@@ -4,7 +4,7 @@
   Books
 @endsection
 
-
+  @section("main")
     <table id="cart" class="table table-hover table-condensed">
         <thead>
         <tr>
@@ -39,10 +39,30 @@
                     </td>
                     <td data-th="Subtotal" class="text-center">${{ $details['price'] * $details['quantity'] }}</td>
                     <td class="actions" data-th="">
-                        <button class="btn btn-info btn-sm update-cart" data-id="{{ $id }}"><i class="fa fa-refresh"></i></button>
+                        <!--<button class="btn btn-info btn-sm update-cart" data-id="{{ $id }}"><i class="fa fa-refresh"></i></button>-->
                         <button class="btn btn-danger btn-sm remove-from-cart" data-id="{{ $id }}"><i class="fa fa-trash-o"></i></button>
                     </td>
                 </tr>
+
+
+                <script type="text/javascript">
+                $(".remove-from-cart").click(function (e) {
+    e.preventDefault();
+
+    var ele = $(this);
+
+    if(confirm("Are you sure")) {
+        $.ajax({
+            url: '{{ url('removefromcart') }}',
+            method: "DELETE",
+            data: {_token: '{{ csrf_token() }}', id: ele.attr("data-id")},
+            success: function (response) {
+                window.location.reload();
+            }
+        });
+    }
+});
+                </script>
             @endforeach
         @endif
 
@@ -58,3 +78,4 @@
         </tr>
         </tfoot>
     </table>
+@endsection

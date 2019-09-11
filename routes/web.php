@@ -33,11 +33,8 @@ Route::get('/pedidos', 'BooksController@detalle');
 Route::get('/pedidos', 'categoriesController@detalle');
 Route::get('/cart', 'cartsController@cart');
 Route::get("/addtocart/{id}", "cartsController@addToCart");
-<<<<<<< HEAD
-=======
+Route::delete('/removefromcart', 'cartsController@remove');
 
-
->>>>>>> 5a72890f9392cdaa71127e927f2e25b79d6f84e8
 Route::get('/faq','FaqController@faq');
 Route::get('/contacto','ContactoController@contacto');
 Route::get('/search', 'musicController@searchmusic');
