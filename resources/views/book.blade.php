@@ -31,7 +31,6 @@
             <p class="btn-holder"><a href="{{ url('addtocart/'.$book->id) }}" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>
 
 
-
         </a>
       </li>
     @empty

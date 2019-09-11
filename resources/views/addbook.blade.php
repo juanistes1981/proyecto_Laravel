@@ -12,7 +12,7 @@
 
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('music/add') }}"enctype="Multipart/form-data">
+                    <form method="POST" action="{{ route('book/add') }}"enctype="Multipart/form-data">
                         @csrf
 
                         <div class="form-group row">

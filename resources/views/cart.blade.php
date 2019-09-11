@@ -1,10 +1,10 @@
 @extends("layouts")
   @yield("book.css")
 @section("title")
-  Books
+  Carrito
 @endsection
 
-
+  @section("main")
     <table id="cart" class="table table-hover table-condensed">
         <thead>
         <tr>
@@ -27,7 +27,7 @@
                 <tr>
                     <td data-th="Product">
                         <div class="row">
-                            {{--<div class="col-sm-3 hidden-xs"><img src="{{ $details['photo'] }}" width="100" height="100" class="img-responsive"/></div>--}}
+                            <div class="col-sm-3 hidden-xs"><img src="{{ $details['photo'] }}" width="100" height="100" class="img-responsive"/></div>
                             <div class="col-sm-9">
                                 <h4 class="nomargin">{{ $details['name'] }}</h4>
                             </div>
@@ -39,10 +39,30 @@
                     </td>
                     <td data-th="Subtotal" class="text-center">${{ $details['price'] * $details['quantity'] }}</td>
                     <td class="actions" data-th="">
-                        <button class="btn btn-info btn-sm update-cart" data-id="{{ $id }}"><i class="fa fa-refresh"></i></button>
+                        <!--<button class="btn btn-info btn-sm update-cart" data-id="{{ $id }}"><i class="fa fa-refresh"></i></button>-->
                         <button class="btn btn-danger btn-sm remove-from-cart" data-id="{{ $id }}"><i class="fa fa-trash-o"></i></button>
                     </td>
                 </tr>
+
+
+                <script type="text/javascript">
+                $(".remove-from-cart").click(function (e) {
+    e.preventDefault();
+
+    var ele = $(this);
+
+    if(confirm("Are you sure")) {
+        $.ajax({
+            url: '{{ url('removefromcart') }}',
+            method: "DELETE",
+            data: {_token: '{{ csrf_token() }}', id: ele.attr("data-id")},
+            success: function (response) {
+                window.location.reload();
+            }
+        });
+    }
+});
+                </script>
             @endforeach
         @endif
 
@@ -58,3 +78,4 @@
         </tr>
         </tfoot>
     </table>
+@endsection

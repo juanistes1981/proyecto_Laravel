@@ -29,9 +29,9 @@ class BooksController extends Controller
   }
 
   public function add() {
-    $categories = Category::all();
+    $category = Category::all();
 
-    return view("addBook", compact("categories"));
+    return view("addBook", compact("category"));
   }
 
   public function store(Request $req) {
@@ -40,7 +40,7 @@ class BooksController extends Controller
       "price" => "required|numeric|min:0|max:1000",
       "stock" => "required|integer|min:0|max:1000",
       "autor" => "required|string|min:3|max:255",
-      "category" => "required|exists:categories,id" //category puede ser
+      "category" => "required|exists:category,id" //category puede ser
     ];
 
     $this->validate($req, $rules);
