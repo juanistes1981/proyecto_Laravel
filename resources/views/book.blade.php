@@ -28,7 +28,7 @@
             <li class="base">Precio:${{$book->price}}</li>
             <li class="base">Stock:{{$book->stock}}</li>
             <li class="base"><img src="{{$book->avatar}}" alt=""> </li>
-
+            <button id="button" href="/addToCart" type="submit">Añadir</button>
         </a>
       </li>
     @empty
