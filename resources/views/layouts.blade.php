@@ -32,17 +32,43 @@
 
                       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                         <ul class="navbar-nav mr-auto">
-                          <li class="nav-item active">
+
+
+                          <li class=@if(Request::path() == 'home' )
+                                "nav-item active"
+                                @else
+                                  "nav-item"
+                            @endif >
                             <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                           </li>
-                          <li class="nav-item"><a class="nav-link" href="/book">Book</a></li>
-                          <li class="nav-item"><a class="nav-link " href="/music">Music</a></li>
+                          <li class= @if(Request::path() == 'book' )
+                                "nav-item active"
+                                @else
+                                  "nav-item"
+                            @endif > <a class="nav-link" href="/book">Book</a></li>
+                          <li class= @if(Request::path() == 'music' )
+                                "nav-item active"
+                                @else
+                                  "nav-item"
+                            @endif><a class="nav-link " href="/music">Music</a></li>
 
-                          <li class="nav-item"><a class="nav-link " href="/contacto">Contacto</a></li>
+                          <li class= @if(Request::path() == 'contacto' )
+                                "nav-item active"
+                                @else
+                                  "nav-item"
+                            @endif><a class="nav-link " href="/contacto">Contacto</a></li>
 
-                          <li class="nav-item"><a class="nav-link " href="/faq">Preguntas</a></li>
+                          <li class=@if(Request::path() == 'faq' )
+                                "nav-item active"
+                                @else
+                                  "nav-item"
+                            @endif><a class="nav-link " href="/faq">Preguntas</a></li>
                               @if (Auth::check())
-                          <li class="nav-item"><a class="nav-link " href="/cart">Carrito</a></li>
+                          <li class="@if(Request::path() == 'cart' )
+                                "nav-item active"
+                                @else
+                                  "nav-item"
+                            @endif"><a class="nav-link " href="/cart">Carrito</a></li>
 
                             <span class="badge badge-pill badge-danger">{{ count((array) session('cart')) }}</span>
 
@@ -52,7 +78,7 @@
                                                   @endforeach
 
 
-                                                      <p>Total: <span class="text-info">$ {{ $total }}</span></p>
+
 
                                                     @endif
 
