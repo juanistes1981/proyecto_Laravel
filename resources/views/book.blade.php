@@ -28,11 +28,10 @@
             <li class="base">Precio:${{$book->price}}</li>
             <li class="base">Stock:{{$book->stock}}</li>
             <li class="base"><img src="{{$book->avatar}}" alt=""> </li>
-<<<<<<< HEAD
-            <button id="button" href="/addToCart" type="submit">Añadir</button>
-=======
-            <button type="button" name="addproduct" href="/addToCart">Añadir al carrito</button>
->>>>>>> 5a72890f9392cdaa71127e927f2e25b79d6f84e8
+            <p class="btn-holder"><a href="{{ url('addtocart/'.$book->id) }}" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>
+
+
+
         </a>
       </li>
     @empty

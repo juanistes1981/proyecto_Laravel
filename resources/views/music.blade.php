@@ -26,7 +26,7 @@
         <li class="base">Precio:${{$music->price}}</li>
         <li class="base">Stock:{{$music->stock}}</li>
         <li class="base"><img src="{{$music->avatar}}" alt=""></li>
-        <button id="button" href="/addToCart" type="submit">Añadir</button>
+        <p class="btn-holder"><a href="{{ url('addtocart/'.$music->id) }}" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>
       </a>
     </li>
   @empty
