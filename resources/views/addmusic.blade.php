@@ -1,11 +1,15 @@
-@extends('layouts.app')
+@extends('layouts')
 @yield("reg.css")
-@section('content')
+@section("title")
+  Agregar musica
+@endsection
+
+@section("main")
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">{{ __('music/add') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('music/add') }}"enctype="Multipart/form-data">

@@ -22,8 +22,8 @@ Route::get('/login', "LoginController@ver");
 
 
 Auth::routes();
-Route::get('/shop', 'HomeController@home');
-Route::get('/', 'HomeController@home');
+Route::get('/shop','HomeController@home');
+Route::get('/','HomeController@home');
 Route::get('/home', 'HomeController@home');
 Route::get('/music', 'musicController@all');
 Route::get('/book', 'booksController@all');
@@ -33,11 +33,7 @@ Route::get('/pedidos', 'BooksController@detalle');
 Route::get('/pedidos', 'categoriesController@detalle');
 Route::get('/cart', 'cartsController@cart');
 Route::get("/addtocart/{id}", "cartsController@addToCart");
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 5a72890f9392cdaa71127e927f2e25b79d6f84e8
 Route::get('/faq','FaqController@faq');
 Route::get('/contacto','ContactoController@contacto');
 Route::get('/search', 'musicController@searchmusic');

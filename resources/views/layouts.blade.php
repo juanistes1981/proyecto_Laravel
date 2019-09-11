@@ -37,9 +37,6 @@
 
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 
-
-                            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
-
                           </li>
                           <li class="nav-item"><a class="nav-link" href="/book">Book</a></li>
                           <li class="nav-item"><a class="nav-link " href="/music">Music</a></li>
