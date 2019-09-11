@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 use Illuminate\Database\Seeder;
 
@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
           'price' => '500',
           'stock' => '200',
           'category_id' => '3',
-          'avatar'=>'/public/imagenes/novelas/orgullo.jpg',
+          'avatar'=>'/imagenes/novelas/orgullo.jpg',
      ]);
      DB::table('books')->insert([
          'id' => '2',
@@ -27,7 +27,7 @@ class DatabaseSeeder extends Seeder
          'price' => '500',
          'stock' => '390',
          'category_id' => '3',
-         'avatar'=>'/public/imagenes/novelas/grito.jpg',
+         'avatar'=>'/imagenes/novelas/grito.jpg',
     ]);
     DB::table('books')->insert([
         'id' => '3',
@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
         'price' => '480',
         'stock' => '100',
         'category_id' => '3',
-        'avatar'=>'/public/imagenes/novelas/jojo.jpg',
+        'avatar'=>'/imagenes/novelas/jojo.jpg',
    ]);
    DB::table('books')->insert([
        'id' => '4',
@@ -45,7 +45,7 @@ class DatabaseSeeder extends Seeder
        'price' => '290',
        'stock' => '100',
        'category_id' => '3',
-       'avatar'=>'/public/imagenes/novelas/amante.jpg',
+       'avatar'=>'/imagenes/novelas/amante.jpg',
   ]);
     DB::table('books')->insert([
       'id' => '5',
@@ -54,7 +54,7 @@ class DatabaseSeeder extends Seeder
       'price' => '600',
       'stock' => '69',
       'category_id' => '4',
-      'avatar'=>'/public/imagenes/policiales/casa.jpg',
+      'avatar'=>'/imagenes/policiales/casa.jpg',
  ]);
     DB::table('books')->insert([
      'id' => '6',
@@ -63,7 +63,7 @@ class DatabaseSeeder extends Seeder
      'price' => '430',
      'stock' => '80',
      'category_id' => '4',
-     'avatar'=>'/public/imagenes/policiales/cuentos.jpg',
+     'avatar'=>'/imagenes/policiales/cuentos.jpg',
 ]);
     DB::table('books')->insert([
     'id' => '7',
@@ -72,7 +72,7 @@ class DatabaseSeeder extends Seeder
     'price' => '500',
     'stock' => '90',
     'category_id' => '4',
-    'avatar'=>'/public/imagenes/policiales/orient.jpg',
+    'avatar'=>'/imagenes/policiales/orient.jpg',
 ]);
     DB::table('books')->insert([
     'id' => '8',
@@ -81,7 +81,7 @@ class DatabaseSeeder extends Seeder
     'price' => '480',
     'stock' => '200',
     'category_id' => '4',
-    'avatar'=>'/public/imagenes/policiales/telon.jpg',
+    'avatar'=>'/imagenes/policiales/telon.jpg',
 ]);
     DB::table('books')->insert([
     'id' => '9',
@@ -90,7 +90,7 @@ class DatabaseSeeder extends Seeder
     'price' => '800',
     'stock' => '20',
     'category_id' => '5',
-    'avatar'=>'/public/imagenes/infantiles/principito.jpg',
+    'avatar'=>'/imagenes/infantiles/principito.jpg',
 ]);
     DB::table('books')->insert([
     'id' => '10',
@@ -99,7 +99,7 @@ class DatabaseSeeder extends Seeder
     'price' => '400',
     'stock' => '50',
     'category_id' => '5',
-    'avatar'=>'/public/imagenes/infantiles/peter.jpg',
+    'avatar'=>'/imagenes/infantiles/peter.jpg',
 ]);
       DB::table('books')->insert([
             'id' => '11',
@@ -108,7 +108,7 @@ class DatabaseSeeder extends Seeder
             'price' => '400',
             'stock' => '50',
             'category_id' => '5',
-            'avatar'=>'/public/imagenes/infantiles/narnia.jpg',
+            'avatar'=>'/imagenes/infantiles/narnia.jpg',
 ]);
 
 DB::table('books')->insert([
@@ -118,16 +118,16 @@ DB::table('books')->insert([
       'price' => '580',
       'stock' => '70',
       'category_id' => '5',
-      'avatar'=>'/public/imagenes/infantiles/oz.jpg',
+      'avatar'=>'/imagenes/infantiles/oz.jpg',
 ]);
-/*DB::table('music')->insert([
+DB::table('music')->insert([
     'id' => '1',
     'titulo' => 'abbey road',
     'autor' => 'the beatles',
     'stock' => '200',
     'price' => '630',
     'category_id' => '1',
-    'avatar'=>'/public/imagenes/images/Abeyroad.jpg',
+    'avatar'=>'/imagenes/images/Abeyroad.jpg',
 ]);
 DB::table('music')->insert([
    'id' => '2',
@@ -136,7 +136,7 @@ DB::table('music')->insert([
    'stock' => '100',
    'price' => '139',
    'category_id' => '1',
-   'avatar'=>'/public/imagenes/images/Aceofspades.jpg',
+   'avatar'=>'/imagenes/images/Aceofspades.jpg',
 ]);
 DB::table('music')->insert([
   'id' => '3',
@@ -145,7 +145,7 @@ DB::table('music')->insert([
   'stock' => '200',
   'price' => '100',
   'category_id' => '1',
-  'avatar'=>'/public/imagenes/images/eurucasativaes.jpg',
+  'avatar'=>'/imagenes/images/eurucasativaes.jpg',
 ]);
 DB::table('music')->insert([
  'id' => '4',
@@ -154,7 +154,7 @@ DB::table('music')->insert([
  'stock' => '200',
  'price' => '280',
  'category_id' => '1',
- 'avatar'=>'/public/imagenes/images/gunsitos.jpg',
+ 'avatar'=>'/imagenes/images/gunsitos.jpg',
 ]);
 DB::table('music')->insert([
 'id' => '5',
@@ -163,7 +163,7 @@ DB::table('music')->insert([
 'stock' => '100',
 'price' => '120',
 'category_id' => '1',
-'avatar'=>'/public/imagenes/images/GreenBand.jpg',
+'avatar'=>'/imagenes/images/GreenBand.jpg',
 ]);
 DB::table('music')->insert([
 'id' => '6',
@@ -172,7 +172,7 @@ DB::table('music')->insert([
 'stock' => '150',
 'price' => '150',
 'category_id' => '1',
-'avatar'=>'/public/imagenes/images/TheCult.jpg',
+'avatar'=>'/imagenes/images/TheCult.jpg',
 ]);
 DB::table('music')->insert([
 'id' => '7',
@@ -181,7 +181,7 @@ DB::table('music')->insert([
 'stock' => '200',
 'price' => '100',
 'category_id' => '1',
-'avatar'=>'/public/imagenes/images/Nirvana0.jpg',
+'avatar'=>'/imagenes/images/Nirvana0.jpg',
 ]);
 DB::table('music')->insert([
 'id' => '8',
@@ -190,7 +190,7 @@ DB::table('music')->insert([
 'stock' => '100',
 'price' => '230',
 'category_id' => '1',
-'avatar'=>'/public/imagenes/images/piojos.jpg',
+'avatar'=>'/imagenes/images/piojos.jpg',
 ]);
 DB::table('music')->insert([
 'id' => '9',
@@ -199,7 +199,7 @@ DB::table('music')->insert([
 'stock' => '500',
 'price' => '300',
 'category_id' => '2',
-'avatar'=>'/public/imagenes/images/Justin_.jpg',
+'avatar'=>'/imagenes/images/Justin_.jpg',
 ]);
 DB::table('music')->insert([
 'id' => '10',
@@ -208,7 +208,7 @@ DB::table('music')->insert([
 'stock' => '200',
 'price' => '139',
 'category_id' => '2',
-'avatar'=>'/public/imagenes/images/lady_gaga_born-this-way.jpg',
+'avatar'=>'/imagenes/images/lady_gaga_born-this-way.jpg',
 ]);
 DB::table('music')->insert([
       'id' => '11',
@@ -217,7 +217,7 @@ DB::table('music')->insert([
       'stock' => '200',
       'price' => '100',
       'category_id' => '2',
-      'avatar'=>'/public/imagenes/images/madon.jpg',
+      'avatar'=>'/imagenes/images/madon.jpg',
 ]);
 
 DB::table('music')->insert([
@@ -227,7 +227,7 @@ DB::table('music')->insert([
 'stock' => '200',
 'price' => '219',
 'category_id' => '2',
-'avatar'=>'/public/imagenes/images/Mars.jpg',
+'avatar'=>'/imagenes/images/Mars.jpg',
 ]);
 DB::table('music')->insert([
 'id' => '13',
@@ -236,7 +236,7 @@ DB::table('music')->insert([
 'stock' => '200',
 'price' => '180',
 'category_id' => '2',
-'avatar'=>'/public/imagenes/images/rwillim.jpg',
+'avatar'=>'/imagenes/images/rwillim.jpg',
 ]);
 DB::table('music')->insert([
 'id' => '14',
@@ -245,7 +245,7 @@ DB::table('music')->insert([
 'stock' => '500',
 'price' => '100',
 'category_id' => '2',
-'avatar'=>'/public/imagenes/images/Londra.jpg',
+'avatar'=>'/imagenes/images/Londra.jpg',
 ]);
 DB::table('music')->insert([
 'id' => '15',
@@ -254,7 +254,7 @@ DB::table('music')->insert([
 'stock' => '200',
 'price' => '180',
 'category_id' => '2',
-'avatar'=>'/public/imagenes/images/Sia.jpg',
+'avatar'=>'/imagenes/images/Sia.jpg',
 ]);
 DB::table('music')->insert([
 'id' => '16',
@@ -263,9 +263,10 @@ DB::table('music')->insert([
 'stock' => '300',
 'price' => '230',
 'category_id' => '2',
-'avatar'=>'/public/imagenes/images/BilieElish.jpg',
+'avatar'=>'/imagenes/images/BilieElish.jpg',
 ]);
-/*DB::table('categories_tabla')->insert([
+
+DB::table('categories_tabla')->insert([
 'id' => '1',
 'name' => 'rock',
 
@@ -289,7 +290,7 @@ DB::table('categories_tabla')->insert([
 'id' => '5',
 'name' => 'infantiles',
 
-]);*/
+]);
 
 
     }
