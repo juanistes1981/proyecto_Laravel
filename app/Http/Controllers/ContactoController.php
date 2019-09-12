@@ -10,4 +10,5 @@ class ContactoController extends Controller
   {
       return view('contacto');
   }
+  
 }

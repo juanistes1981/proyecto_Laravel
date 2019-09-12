@@ -39,7 +39,7 @@ class musicController extends Controller
       "price" => "required|numeric|min:0|max:1000",
       "stock" => "required|integer|min:0|max:1000",
       "autor" => "required|string|min:3|max:255",
-      "category" => "required|exists:category,id", //category puede ser
+      "category_id" => "required|exists:categories_tabla,id", //category puede ser
       "avatar" => "required|image"
     ];
 
@@ -61,9 +61,11 @@ class musicController extends Controller
   public function delete(Request $req) {
     $idmusic = $req["id"];
 
-    $musics = Music::find($idmusic);
+    $mus = Music::find($idmusic);
 
-    /*$musics->delete();*/
+    $mus->delete();
+
+
 
     return redirect("/");
   }

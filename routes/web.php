@@ -36,11 +36,11 @@ Route::get("/addtocart/{id}", "cartsController@addToCart");
 
 Route::get('/faq','FaqController@faq');
 Route::get('/contacto','ContactoController@contacto');
-Route::get('/search', 'musicController@searchmusic');
+Route::get('/search', 'musicController@search');
 Route::get('/search', 'booksController@search');
 Route::get('/music/add', 'musicController@add')->middleware("auth");
 Route::get('/book/add', 'booksController@add')->middleware("auth");
 Route::post('/music/add', 'musicController@store')->middleware("auth");
 Route::post('/book/add', 'booksController@store')->middleware("auth");
-Route::post('/music/add', 'musicController@delete')->middleware("auth");
-Route::post('/book/add', 'booksController@delete')->middleware("auth");
+Route::post('/music/delete', 'musicController@delete')->middleware("auth");
+Route::post('/book/delete', 'booksController@delete')->middleware("auth");

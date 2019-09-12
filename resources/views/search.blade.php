@@ -17,7 +17,7 @@
   <ul>
     @forelse ($books as $books)
       <li>
-        <a href="/book/{{$books->id}}">
+        <a href="/search/{{$books->id}}">
             <li class="base">titulo:{{$books->titulo}}</li>
             <li class="base"> {{$books->avatar}}</li>
 
