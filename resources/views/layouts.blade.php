@@ -21,11 +21,11 @@
     @yield("js")
   </head>
   <body>
-    <div class="container">
+    <div class="container" style=" margin-top: 6em;">
       <header>
 
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <a class="navbar-brand" href="#">Book&Music</a>
+                <a class="navbar-brand" href="/home">Book&Music</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,13 +34,13 @@
                         <ul class="navbar-nav mr-auto">
 
 
-                          <li class=@if(Request::path() == 'home' )
+                          <!-- <li class=@if(Request::path() == 'home' )
                                 "nav-item active"
                                 @else
                                   "nav-item"
                             @endif >
                             <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
-                          </li>
+                          </li> -->
                           <li class= @if(Request::path() == 'book' )
                                 "nav-item active"
                                 @else
@@ -52,17 +52,41 @@
                                   "nav-item"
                             @endif><a class="nav-link " href="/music">Music</a></li>
 
-                          <li class= @if(Request::path() == 'contacto' )
-                                "nav-item active"
-                                @else
-                                  "nav-item"
-                            @endif><a class="nav-link " href="/contacto">Contacto</a></li>
+                            <div class="dropdown" id="dropdown" >
+                                  <a class="nav-link" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 20px">
+                                    Menu
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="dropmenu" >
+                                    <li class= @if(Request::path() == 'contacto' )
+                                          "nav-item active"
+                                          @else
+                                            "nav-item"
+                                      @endif><a class="nav-link " href="/contacto" style="color:grey;"> Contacto</a></li>
 
-                          <li class=@if(Request::path() == 'faq' )
-                                "nav-item active"
-                                @else
-                                  "nav-item"
-                            @endif><a class="nav-link " href="/faq">Preguntas</a></li>
+                                  <div class="dropdown-divider" id="divider"></div>
+
+                                      <li class=@if(Request::path() == 'faq' )
+                                            "nav-item active"
+                                            @else
+                                              "nav-item"
+                                        @endif><a class="nav-link " style="color:grey;" href="/faq"> Preguntas</a></li>
+
+
+
+                                        <div class="dropdown-divider" id="divider"></div>
+                                        @if (Auth::check())
+                                        <li><a class="nav-link " style="color:grey;" href="/music/add"> Add Music</a></li>
+
+                                          <div class="dropdown-divider"  id="divider"></div>
+
+                                        <li><a class="nav-link " style="color:grey;" href="/book/add"> Add Books</a></li>
+                                      @endif
+
+                                  </div>
+                            </div>
+
+
+
                               @if (Auth::check())
                           <li class="@if(Request::path() == 'cart' )
                                 "nav-item active"
@@ -82,11 +106,7 @@
 
                                                     @endif
 
-                          @if (Auth::check())
-                            <li><a href="/music/add">Add Music</a></li>
 
-                            <li><a href="/book/add">Add Books</a></li>
-                          @endif
 
                     </ul>
                         <form class="form-inline my-2 my-lg-0" action="/search" method="get">
@@ -94,11 +114,11 @@
                             @section("js")
                                 <script src="/js/search.js" charset="utf-8"></script>
                                   @endsection
-                          <input class="form-control mr-sm-2" type="text" name="search" placeholder="Search" aria-label="Search">
+                          <input id="placeholdersearch"class="form-control mr-sm-2" type="text" name="search" placeholder="Search" aria-label="Search">
                           <button id="search" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
 
-                        <ul class="auth">
+                        <ul  class="auth">
                               @if (Auth::check())
                                 <li>Hello {{Auth::user()->name}}</li>
 
@@ -117,13 +137,14 @@
                                 </form>
 
                               @else
-                              <ul class="nav navbar-nav navbar-right">
+                              <ul id="auth" class="nav navbar-nav navbar-right">
                                   <li class="validation"><a href="/register"><span class="glyphicon glyphicon-user"></span>Register</a></li>
 
                                   <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
 
                               @endif
                             </ul>
+                          </ul>
                     </div>
                 </nav>
     </header>
@@ -178,8 +199,8 @@
           <!-- Footer Elements -->
 
           <!-- Copyright -->
-          <div class="footer-copyright text-center py-3">© 2019 Copyright dh:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> Todos los derechos quedan reservados a sus autores y editoriales.</a>
+          <div class="footer-copyright text-center py-3" >© 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/" style="color:black;"> Todos los derechos quedan reservados a sus autores y editoriales.</a>
           </div>
           <!-- Copyright -->
 
