@@ -148,7 +148,7 @@
         <p class="base">Autor:{{$music->autor}}</p>
         <p class="base">Precio:${{$music->price}}</p>
         <p class="base">Stock:{{$music->stock}}</p>
-        <button href="{{ url('addtocart/'.$music->id) }}" type="button" class="btn btn-dark">Agregar al carrito</button>
+        <a href="{{ url('addtocart/'.$music->id) }}">  <button href="{{ url('addtocart/'.$music->id) }}" type="button" class="btn btn-dark">Agregar al carrito</button></a>
           @if (Auth::check())
         <form class="" action="/music/delete" method="post">
           @csrf

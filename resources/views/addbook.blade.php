@@ -9,7 +9,7 @@
       <h1>Añadir nuevo producto</h1>
   </div>
 
-  <form method="POST" action="/book/add" enctype="Multipart/form-data">
+  <form method="POST" action="/book/add" enctype="multipart/form-data">
       @csrf
 
       <div class="form-group row">
