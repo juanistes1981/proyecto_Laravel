@@ -153,7 +153,7 @@
                 <p class="base">Autor:{{$book->Autor}}</p>
                 <p class="base">Precio:${{$book->price}}</p>
                 <p class="base">Stock:{{$book->stock}}</p>
-                <button href="{{ url('addtocart/'.$book->id) }}" type="button" class="btn btn-dark">Agregar al carrito</button>
+                <a href="{{ url('addtocart/'.$book->id) }}">  <button href="{{ url('addtocart/'.$book->id) }}" type="button" class="btn btn-dark">Agregar al carrito</button></a>
                  @if (Auth::check())
                 <form class="" action="/book/delete" method="post">
                   @csrf

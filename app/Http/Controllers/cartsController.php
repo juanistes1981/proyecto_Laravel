@@ -40,8 +40,8 @@ class cartsController extends Controller
           if(isset($cart[$id])) {
               $cart[$id]['quantity']++;
               session()->put('cart', $cart);
-              return $cart;
-              //return redirect()->back()->with('success', 'Product added to cart successfully!');
+              //return $cart;
+              return redirect()->back()->with('success', 'Product added to cart successfully!');
           }
           // if item not exist in cart then add to cart with quantity = 1
           $cart[$id] = [
@@ -51,8 +51,8 @@ class cartsController extends Controller
               "photo" => $product->avatar
           ];
           session()->put('cart', $cart);
-          return $cart;
-          //return redirect()->back()->with('success', 'Product added to cart successfully!');
+          //return $cart;
+          return redirect()->back()->with('success', 'Product added to cart successfully!');
       }
       public function remove(Request $request)
   {

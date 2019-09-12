@@ -1,5 +1,5 @@
 @extends("layouts")
-
+  @yield("book.css")
 @section("title")
   Carrito
 @endsection
@@ -51,7 +51,7 @@
 
     var ele = $(this);
 
-    if(confirm("Are you sure")) {
+    if(confirm("Are you sure? ")) {
         $.ajax({
             url: '{{ url('removefromcart') }}',
             method: "DELETE",
