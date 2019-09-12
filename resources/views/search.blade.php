@@ -17,12 +17,6 @@
   <ul>
     @forelse ($books as $book)
       <li>
-<<<<<<< HEAD
-        <a href="/search/{{$books->id}}">
-            <li class="base">titulo:{{$books->titulo}}</li>
-            <li class="base"> {{$books->avatar}}</li>
-=======
->>>>>>> 98015a4ebc635476c73176da739fecce546af822
 
     <div class="row no-gutters">
       <div class="col-md-4">
