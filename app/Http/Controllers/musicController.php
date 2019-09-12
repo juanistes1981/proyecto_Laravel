@@ -45,7 +45,7 @@ class musicController extends Controller
 
     $this->validate($req, $rules);
 
-    $music = new Music();
+    $music = new music();
 
     $music->titulo = $req->titulo;
     $music->price = $req->price;
@@ -55,7 +55,7 @@ class musicController extends Controller
     $music->avatar=$req->avatar;
     $music->save();
 
-    return redirect("/music" . $music->id);
+    return redirect("/music/" . $music->id);
   }
 
   public function delete(Request $req) {
@@ -65,8 +65,6 @@ class musicController extends Controller
 
     $mus->delete();
 
-
-
-    return redirect("/");
+    return redirect("/music");
   }
 }

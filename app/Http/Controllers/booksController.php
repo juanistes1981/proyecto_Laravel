@@ -29,7 +29,7 @@ class BooksController extends Controller
 
   public function search(Request $req) {
     $search = $req["search"];
-    $books = book::where("titulo", "like", "%" . $search . "%")->get();
+    $books = Book::where("titulo", "like", "%" . $search . "%")->get();
     $musics = music::where("titulo", "like", "%" . $search . "%")->get();
     return view("search", compact("books","musics" , "search"));
   }
@@ -62,8 +62,7 @@ class BooksController extends Controller
     $books->avatar = $req->avatar;
     $books->save();
 
-
-    return redirect("/book" . $books->id);
+      return redirect("/book/" . $books->id);
   }
 
   public function delete(Request $req) {
@@ -73,6 +72,6 @@ class BooksController extends Controller
 
     $bok->delete();
 
-    return redirect("/");
+    return redirect("/book");
   }
 }

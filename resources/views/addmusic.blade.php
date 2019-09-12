@@ -1,5 +1,5 @@
 @extends('layouts')
-@yield("reg.css")
+
 @section("title")
   Agregar musica
 @endsection

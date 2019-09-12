@@ -154,6 +154,14 @@
                 <p class="base">Precio:${{$book->price}}</p>
                 <p class="base">Stock:{{$book->stock}}</p>
                 <button href="{{ url('addtocart/'.$book->id) }}" type="button" class="btn btn-dark">Agregar al carrito</button>
+                 @if (Auth::check())
+                <form class="" action="/book/delete" method="post">
+                  @csrf
+                  <input type="hidden" name="id" value="{{$book->id}}">
+                  <button type="submit" name="button" class="btn btn-danger">Delete</button>
+                </form>
+              @endif
+
 </div>
 </div>
 </div>
