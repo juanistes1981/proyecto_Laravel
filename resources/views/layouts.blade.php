@@ -94,7 +94,7 @@
                             @section("js")
                                 <script src="/js/search.js" charset="utf-8"></script>
                                   @endsection
-                          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                          <input class="form-control mr-sm-2" type="text" name="search" placeholder="Search" aria-label="Search">
                           <button id="search" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
 
@@ -134,7 +134,6 @@
       </main>
 
 
-      <footer>
         <footer  class="footer" class="page-footer font-small special-color-dark pt-4">
 
           <!-- Footer Elements -->

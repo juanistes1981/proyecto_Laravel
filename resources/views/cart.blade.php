@@ -1,11 +1,11 @@
 @extends("layouts")
-  @yield("book.css")
+
 @section("title")
   Carrito
 @endsection
 
   @section("main")
-    <table id="cart" class="table table-hover table-condensed">
+    <table id="cart" class="table table-hover table-condensed" margin>
         <thead>
         <tr>
             <th style="width:50%">Product</th>

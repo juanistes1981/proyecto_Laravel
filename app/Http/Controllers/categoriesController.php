@@ -19,4 +19,3 @@ class CategoriesController extends Controller
       return view("category", compact("category"));
     }
   }
-}

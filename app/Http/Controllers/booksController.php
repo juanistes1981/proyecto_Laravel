@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Book;
 use App\category;
+use App\music;
 
 class BooksController extends Controller
 {
@@ -20,12 +21,17 @@ class BooksController extends Controller
     return view("book", compact("books"));
   }
 
+  public function category($id) {
+    $books = Book::find($id);
+
+    return view("book", compact("books"));
+  }
+
   public function search(Request $req) {
     $search = $req["search"];
-
     $books = book::where("titulo", "like", "%" . $search . "%")->get();
-
-    return view("search", compact("books", "search"));
+    $musics = music::where("titulo", "like", "%" . $search . "%")->get();
+    return view("search", compact("books","musics" , "search"));
   }
 
   public function add() {
