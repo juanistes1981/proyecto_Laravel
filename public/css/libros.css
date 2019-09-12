@@ -1,0 +1,35 @@
+div.container{
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(15,15,15,1) 100%);
+}
+
+#banner h1{
+color: white;
+font-weight: bold;
+font-size: 400%;
+font-family: 'Playfair Display', serif;
+}
+
+#banner h2{
+color: white;
+font-size: 300%;
+font-family: 'Playfair Display', serif;
+font-weight: bold;
+}
+#banner a{
+  width: 30%;
+}
+
+div.card.mb-3{
+  margin: 0 auto;
+}
+div.card.mb-3 p{
+font-family: 'Fauna One', serif;
+}
+div.card-body btn{
+  background-color: #eff43c;
+}
+ul.footer{
+  list-style: none;
+  margin-top: 0px;
+}
