@@ -10,7 +10,7 @@ flex-wrap: nowrap;
 }
 nav{
   background-color:#424949  ;
-;
+
 
 }
  header ul li{
@@ -106,17 +106,36 @@ p{
 .navbar-collapse{
   text-align: center;
 }
-@media (min-width: 576px)
+
+
+@media (min-width: 576px){
 .form-inline .form-control {
     display: inline-block;
     width: 85%;
     vertical-align: middle;
 }
-@media (min-width: 1200px)
+ul #auth{
+  text-align:center;
+  margin-left: 13em;
+
+}
+ul #auth li{
+  margin-bottom: 5px;
+}
+#placeholdersearch{
+  width: 85%;
+}
+}
+
+@media (min-width: 1200px){
 .container{
     max-width: 1323px;
     padding: 0;
 }
 footer{
   margin-top: 60px;
+}
+#placeholdersearch {
+    width: 68%;
+}
 }
