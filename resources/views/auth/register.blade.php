@@ -1,7 +1,8 @@
-
 @extends('layouts')
 @section("main")
-<div class="container">
+<body style="background-color:#c7c6c6;">
+
+<div class="container" style=" margin-top: 6em;">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -25,7 +26,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="apellido" class="col-md-4 col-form-label text-md-right">{{ __('apellido') }}</label>
+                            <label for="apellido" class="col-md-4 col-form-label text-md-right">{{ __('Apellido') }}</label>
 
                             <div class="col-md-6">
                                 <input id="apellido" type="text" class="form-control @error('apellido') is-invalid @enderror" name="apellido" value="{{ old('apellido') }}" required autocomplete="apellido" autofocus>
@@ -38,7 +39,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="domicilio" class="col-md-4 col-form-label text-md-right">{{ __('domicilio') }}</label>
+                            <label for="domicilio" class="col-md-4 col-form-label text-md-right">{{ __('Domicilio') }}</label>
 
                             <div class="col-md-6">
                                 <input id="domicilio" type="text" class="form-control @error('domicilio') is-invalid @enderror" name="domicilio" value="{{ old('domicilio') }}" required autocomplete="domicilio" autofocus>
@@ -51,7 +52,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="avatar" class="col-md-4 col-form-label text-md-right">{{ __('avatar') }}</label>
+                            <label for="avatar" class="col-md-4 col-form-label text-md-right">{{ __('Avatar') }}</label>
 
                             <div class="col-md-6">
                                 <input id="avatar" type="file" enctype="multipart/form-data" class="form-control @error('avatar') is-invalid @enderror" name="avatar" value="{{ old('avatar') }}" required autocomplete="avatar" autofocus>
@@ -114,4 +115,5 @@
         </div>
     </div>
 </div>
+</body>
 @endsection
